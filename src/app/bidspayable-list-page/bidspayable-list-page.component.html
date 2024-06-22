@@ -1,0 +1,135 @@
+
+ 
+    <div class="navbar">
+        <div class="top-nav">
+            <div class="left">
+                <i class="nav-item text">BP-SDV_199</i>
+                <i class="nav-item texr1">Property Verification Request</i>
+                <i class="nav-item text2">CO-HYD</i>
+            </div>
+            <div class="left">
+                <i class="nav-item DATE">DATE</i>
+                <i class="nav-item time">TIME</i>
+                <div class="nav-item bell-icon">
+                    <i class="pi pi-bell"></i>
+                    <span class="dot"></span>
+                </div>
+                <div class="nav-item circle-icon">M</div>
+                <div class="nav-item icon-text">Mootoorii (CO-PVE)</div>
+                <div class="nav-item exit">
+                    <i class="pi pi-sign-out"></i>
+                </div>
+            </div>
+        </div>
+    
+       
+    </div>
+    <div class="lower-nav">
+        <p>Property Verification Request</p>
+    </div>
+    <div class="container2">
+     
+         <div class="box1"><i class="pi pi-th-large"></i></div>
+         <div class="box2"> <i class="pi pi-bars"></i></div>
+         <div class="box3"><i class="pi pi-search"></i></div>
+         <div class="box4"> <p-dropdown 
+            [options]="cities" 
+            [(ngModel)]="selectedCity" 
+            optionLabel="name"
+            placeholder="Select a City" /></div>
+         <div class="box5"><p-calendar [(ngModel)]="date" /></div>
+         <div class="box6"><p-dropdown 
+            [options]="Branches" 
+            [(ngModel)]="selectedBranch" 
+            optionLabel="name"
+            placeholder="Select a City" /></div>
+
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Chit Ref No</th>
+                <th>Subscriber Name</th>
+                <th>ID</th>
+                <th>Date Of Auction</th>
+                <th>Branch</th>
+                <th>Status</th>
+                <th>Stage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>LT005V BN - 07</td>
+                <td>Srinivas Narsing Rao</td>
+                <td>24565481</td>
+                <td>28 Jan 2024</td>
+                <td>Basaveshwara Nagar</td>
+                <td class="pending">Pending</td>
+                <td><span class="stage CVD-I">CVD-I</span></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>TT039B BN - 18</td>
+                <td>Sai Tejasvi</td>
+                <td>24645741</td>
+                <td>28 Jan 2024</td>
+                <td>Basaveshwara Nagar</td>
+                <td class="approved">Approved</td>
+                <td><span class="stage CVD-VO">CVD-VO</span></td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>TT023X BN - 06</td>
+                <td>Narsing Rao</td>
+                <td>45745846</td>
+                <td>28 Jan 2024</td>
+                <td>Ameerpet</td>
+                <td class="approved">Approved</td>
+                <td><span class="stage CVD-VO">CVD-VO</span></td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>TT037B BN 05</td>
+                <td>Bora Sankara Rao</td>
+                <td>24434533</td>
+                <td>28 Jan 2024</td>
+                <td>Balanagar</td>
+                <td class="approved">Approved</td>
+                <td><span class="stage CVD-VO">CVD-VO</span></td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>LT005V BN - 07</td>
+                <td>C Aruna Srilatha</td>
+                <td>45745938</td>
+                <td>21 Dec 2023</td>
+                <td>Balanagar</td>
+                <td class="rejected">Rejected</td>
+                <td><span class="stage BP-EX">BP-EX</span></td>
+            </tr>
+        </tbody>
+    </table>
+    
+     <div class="sidebar">
+         <div class="logo">
+             <img src="../../../public/MAR.svg" alt="Margadarsi Logo">
+             <h1>Margadarsi</h1>
+             <p>Chit Fund Private Limited</p>
+         </div>
+         <nav>
+             <ul>
+                 <li><a href="#" class="active"><i class="pi pi-home"></i> Home</a></li>
+                 <li><a href="#"><i class="pi pi-wallet"
+                     ></i> Bidspayable</a></li>
+                 <li><a href="#"><i class="pi pi-file"></i> Reports</a></li>
+             </ul>
+         </nav>
+     </div>
+
+
+     
+    
+    
+
